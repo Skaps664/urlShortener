@@ -25,6 +25,6 @@ router.get("/:shortId", async function (req, res) {
   res.redirect(entry.redirectUrl);
 });
 
-router.get("/analytics/:shortId", handelAnalytics);
+// router.get("/analytics/:shortId", handelAnalytics);
 
 module.exports = router;

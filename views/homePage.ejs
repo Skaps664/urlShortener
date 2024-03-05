@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkShort</title>
+    <link rel="stylesheet" href="/stylesheets/homePage.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <main class="main-cont">
+        <div class="frame-a">
+          <a href="#" class="logo">
+            <div class="frame-b">
+              <h1 class="waveform">LinkShort</h1>
+              <div class="rectangle"></div>
+            </div>
+          </a>
+          <!-- <div class="sign-in">
+            <span class="already-have-an">Already have an account?</span>
+            <b class="sign-in1">
+              <a href="#">Sign in</a>
+            </b>
+          </div> -->
+        </div>
+        <section class="sign-up-callout">
+          <div class="start-trial-frame">
+            <!-- <h1 class="start-your-free-container">
+              <p class="start-your-free">Start your free</p>
+              <p class="day-trial">30-day trial</p>
+            </h1> -->
+            <div class="resource-frame">
+              <div class="social-media-buttons-frame">
+                <div class="header-text">
+                  <h1 class="the-1-source-container">
+                    <p class="the-1">
+                      <span>The </span>
+                      <span class="span1">#1</span>
+                    </p>
+                    <p class="source-for">source for</p>
+                    <p class="audio">url</p>
+                    <p class="creators">shortening</p>
+                  </h1>
+                  <h2 class="an-ever-growing-resource">
+                    An ever-growing resource for url shortening, sourced by big
+                    companies from all over the world
+                  </h2>
+                </div>
+              </div>
+              <div class="form-frame">
+                <div class="sign-up-social-media">
+                  <h2 class="sign-up-with">Sign up with (not working yet)</h2>
+                  <div class="social-media-buttons">
+                    <button class="social-media-sign-up">
+                      <img
+                        class="google-512-1-icon"
+                        alt=""
+                        src="https://res.cloudinary.com/jasuaje/image/upload/v1707717387/Sign%20Up/f761848e36a378309384a8457bb0e1e8.png"
+                      />
+
+                      <div class="google">Google</div>
+                    </button>
+                    <button class="social-media-sign-up1">
+                      <img
+                        class="icon"
+                        alt=""
+                        src="https://res.cloudinary.com/jasuaje/image/upload/v1707717387/Sign%20Up/be0fc97e801d5ebbb11f5bd851627b22.png"
+                      />
+
+                      <div class="twitter">Twitter</div>
+                    </button>
+                  </div>
+                </div>
+                <div class="line-frame">
+                  <div class="or-label"></div>
+                  <div class="or">Or</div>
+                  <div class="or-label1"></div>
+                </div>
+                <form class="sign-up-form" method="post" action="/url/">
+                  <input
+                    class="input-text2"
+                    placeholder="Email"
+                    type="text"
+                    name="EmailInput"
+                  />
+
+                  <input
+                    class="input-text3"
+                    placeholder="URL (https://example.com)"
+                    type="text"
+                    name="url"
+                    required="True"
+                  />
+
+                  <div class="agreement">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="by-creating-an-container">
+                      <span class="by-creating-an"
+                        >By creating an account, you agree to our
+                      </span>
+                      <b class="terms">
+                        <a href="#">Terms</a>
+                      </b>
+                      <span class="and-have-read">
+                        and have read and acknowledge the
+                      </span>
+                      <b class="global-privacy-statement">
+                        <a href="#">Global Privacy Statement</a>
+                      </b>
+                    </div>
+                  </div>
+                  <div class="submit-button">
+                    <button class="button">
+                      <div class="create-account">Shrink it man</div>
+                    </button>
+                  </div>
+                </form>
+                <% if(locals.id){ %>
+                <h2 class="sign-up-with">
+                  New Url: <u>http://localhost:3000/url/<%= id %></u>
+                </h2>
+                <% } %>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
